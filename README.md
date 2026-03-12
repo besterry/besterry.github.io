@@ -1,3 +1,3 @@
 # Google Play
-- [DreamInterpreter Privacy Policy](https://github.com/besterry/besterry.github.io/blob/main/DreamInterpreter/docs/PRIVACY_POLICY.md) 
-- [PulseCleaner Privacy Policy](https://github.com/besterry/besterry.github.io/blob/main/PulseCleaner/docs/PRIVACY_POLICY.md)
+- [DreamInterpreter Privacy Policy](https://besterry.github.io/DreamInterpreter/privacy-policy.html) 
+- [PulseCleaner Privacy Policy](https://besterry.github.io/PulseCleaner/privacy-policy.html)
