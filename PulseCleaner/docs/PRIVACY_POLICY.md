@@ -53,7 +53,7 @@ You can stop all collection of information by the Application by uninstalling it
 
 ## Data Retention Policy
 
-Analytics and advertising data are retained according to the policies of the third-party services (AppMetrica, Yandex). If you would like to request deletion of data that the Service Provider may hold, please contact the Service Provider at **mobilewave.dev@gmail.com**. They will respond within a reasonable time.
+Analytics and advertising data are retained according to the policies of the third-party services (AppMetrica, Yandex). The Service Provider does not operate backend servers that store user accounts or personal data submitted through the Application; data transmitted off the device is processed by those third parties under their policies. The Application does not provide an in-app mechanism to request deletion of data held by third parties—for such requests, refer to the privacy policies of AppMetrica and Yandex linked above, use your device’s ad tracking limits, or uninstall the Application (see Opt-Out Rights). For general privacy questions, contact **mobilewave.dev@gmail.com**.
 
 ---
 
@@ -75,7 +75,7 @@ The Service Provider is concerned about safeguarding the confidentiality of your
 
 This Privacy Policy may be updated from time to time. The Service Provider will notify you of any changes by updating this page. You are advised to consult this Privacy Policy regularly; continued use of the Application is deemed approval of changes.
 
-This privacy policy is effective as of **2026-02-22**.
+This privacy policy is effective as of **2026-03-12**.
 
 ---
 
