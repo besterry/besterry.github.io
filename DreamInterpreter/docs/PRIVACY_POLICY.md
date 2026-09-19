@@ -19,18 +19,25 @@ The Service Provider may use the information you provided to contact you from ti
 
 For a better experience, while using the Application, the Service Provider may require you to provide us with certain personally identifiable information, including but not limited to **user-entered dream text** and **device identifiers**. The information that the Service Provider request will be retained by them and used as described in this privacy policy.
 
-**Dream interpretation:** Text you enter for dream interpretation is sent to our service provider for processing and is not stored on our servers after the response is delivered.
+**Dream interpretation:** When you request an interpretation, the dream text is sent over an encrypted connection (HTTPS) to our server (hosted on Vercel) and forwarded to **YandexGPT** (Yandex Cloud) to generate the response. The Service Provider does not store the dream text on its server after the response is delivered; technical request logs contain only the IP address, request time and text length and are kept by the hosting provider for a limited period.
+
+**Dream history:** Your dreams, interpretations and emotions are stored on your device and are not sent to the Service Provider. If Android backup is enabled on your device, this data may be included in your personal device backup in your Google account, which the Service Provider cannot access. The data is deleted when you delete it in the app or uninstall the Application.
+
+**Reporting AI responses:** If you use the "Report this response" button, the dream text and the AI response are sent to AppMetrica (Yandex) together with the selected reason, so that the Service Provider can review the report and improve the service.
+
+**Daily horoscope:** To generate a horoscope, only the selected zodiac sign, date and language are sent to our server; no personal data is required.
 
 ---
 
 ## Third Party Access
 
-Only aggregated, anonymized data is periodically transmitted to external services to aid the Service Provider in improving the Application and their service. The Service Provider may share your information with third parties in the ways that are described in this privacy statement.
+The Application uses third-party services to show ads, collect usage statistics and crash reports, and generate AI responses. These services may receive device identifiers (including the advertising ID), app usage events, crash and diagnostic data, and — for AI features — the text you submit, as described above. You can reset or delete the advertising ID in your device settings.
 
 **Please note that the Application uses third-party services that have their own Privacy Policy.** Below are the links to the Privacy Policy of the third-party service providers used by the Application:
 
 - **Yandex Mobile Ads:** https://yandex.ru/legal/confidential/
-- **AppMetrica:** https://appmetrica.io/docs/ru/concepts/legal/privacy-policy
+- **AppMetrica (Yandex):** https://yandex.ru/legal/confidential/
+- **YandexGPT (Yandex Cloud):** https://yandex.ru/legal/confidential/
 
 The Service Provider may disclose User Provided and Automatically Collected Information:
 
@@ -42,7 +49,7 @@ The Service Provider may disclose User Provided and Automatically Collected Info
 
 ## Use of Artificial Intelligence
 
-The Application uses Artificial Intelligence (AI) technologies to enhance user experience and provide certain features. The AI components may process user data to deliver personalized content, recommendations, or automated functionalities. All AI processing is performed in accordance with this privacy policy and applicable laws. If you have questions about the AI features or data processing, please contact the Service Provider.
+The Application uses Artificial Intelligence (AI) technologies to enhance user experience and provide certain features. The AI components process the text you submit (dream descriptions) to generate interpretations and daily horoscopes. AI responses are generated automatically, are intended for entertainment and self-reflection, and are not professional (medical, psychological, financial or other) advice. All AI processing is performed in accordance with this privacy policy and applicable laws. If you have questions about the AI features or data processing, please contact the Service Provider.
 
 ---
 
