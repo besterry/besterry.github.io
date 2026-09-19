@@ -15,15 +15,19 @@ The Application collects information when you download and use it. This informat
 
 The Application does not gather precise information about the location of your mobile device.
 
-The Service Provider may use the information you provided to contact you from time to time to provide you with important information, required notices and marketing promotions.
-
-For a better experience, while using the Application, the Service Provider may require you to provide us with certain personally identifiable information, including but not limited to **user-entered dream text** and **device identifiers**. The information that the Service Provider request will be retained by them and used as described in this privacy policy.
+The Application does not require an account and does not ask for your name, e-mail or phone number. The information you enter (**dream text**) and **device identifiers** are processed only as described in this privacy policy.
 
 **Dream interpretation:** When you request an interpretation, the dream text is sent over an encrypted connection (HTTPS) to our server (hosted on Vercel) and forwarded to **YandexGPT** (Yandex Cloud) to generate the response. The Service Provider does not store the dream text on its server after the response is delivered; technical request logs contain only the IP address, request time and text length and are kept by the hosting provider for a limited period.
 
 **Dream history:** Your dreams, interpretations and emotions are stored on your device and are not sent to the Service Provider. If Android backup is enabled on your device, this data may be included in your personal device backup in your Google account, which the Service Provider cannot access. The data is deleted when you delete it in the app or uninstall the Application.
 
 **Reporting AI responses:** If you use the "Report this response" button, the dream text and the AI response are sent to AppMetrica (Yandex) together with the selected reason, so that the Service Provider can review the report and improve the service.
+
+**Voice input:** If you use the microphone button, speech is recognized by the speech recognition service installed on your device (for example, Google). The Application does not record or store audio and receives only the recognized text, which is then handled like typed dream text.
+
+**Usage statistics:** To understand which features are used, the Application sends anonymous usage events to AppMetrica (Yandex), such as opening a screen, requesting an interpretation, choosing an emotion or turning on reminders, together with app settings (app language, theme, whether reminders and the home screen widget are enabled, the selected zodiac sign) and the number of saved dreams. Dream text and AI responses are not included in these events.
+
+**Notifications and widget:** Reminders and the home screen widget work locally on your device. You can turn off notifications in the Application or in the system settings at any time.
 
 **Daily horoscope:** To generate a horoscope, only the selected zodiac sign, date and language are sent to our server; no personal data is required.
 
@@ -61,7 +65,7 @@ You can stop all collection of information by the Application easily by uninstal
 
 ## Data Retention Policy
 
-The Service Provider will retain User Provided data for as long as you use the Application and for a reasonable time thereafter. If you'd like them to delete User Provided Data that you have provided via the Application, please contact them at **mobilewave.dev@gmail.com** and they will respond in a reasonable time.
+Your dream history is stored only on your device, and you can delete any entry in the Application at any time; uninstalling the Application deletes all of it. The Service Provider does not keep dream text on its server. Usage statistics and reports are kept by AppMetrica according to its retention settings. If you'd like to request deletion of data related to you, please contact **mobilewave.dev@gmail.com** and the Service Provider will respond in a reasonable time.
 
 ---
 
@@ -83,7 +87,7 @@ The Service Provider is concerned about safeguarding the confidentiality of your
 
 This Privacy Policy may be updated from time to time for any reason. The Service Provider will notify you of any changes to the Privacy Policy by updating this page with the new Privacy Policy. You are advised to consult this Privacy Policy regularly for any changes, as continued use is deemed approval of all changes.
 
-This privacy policy is effective as of **2026-02-07**.
+This privacy policy is effective as of **2026-09-20**.
 
 ---
 
