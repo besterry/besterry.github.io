@@ -31,7 +31,7 @@ For a better experience, while using the Application, the Service Provider may r
 
 ## Third Party Access
 
-The Application uses third-party services to show ads, collect usage statistics and crash reports, and generate AI responses. These services may receive device identifiers (including the advertising ID), app usage events, crash and diagnostic data, and — for AI features — the text you submit, as described above. You can reset or delete the advertising ID in your device settings.
+The Application uses third-party services to show ads, collect usage statistics and crash reports, and generate AI responses. These services may receive device identifiers (including the advertising ID), app usage events, crash and diagnostic data, and, for AI features, the text you submit, as described above. You can reset or delete the advertising ID in your device settings.
 
 **Please note that the Application uses third-party services that have their own Privacy Policy.** Below are the links to the Privacy Policy of the third-party service providers used by the Application:
 
