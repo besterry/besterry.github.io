@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Кейс: модпак и серверные моды для Project Zomboid</title>
+<meta name="description" content="4 года разработки и поддержки модпака для приватного сервера Project Zomboid: авторский мод htrade, доска убийств T15K_Killboard, автосбор AutoLoot.">
+<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="../index.html"><span class="dot"></span> datacraft_dev</a>
+    <nav class="nav-links">
+      <a href="../index.html#cases">Все кейсы</a>
+      <a href="../index.html#services">Услуги</a>
+    </nav>
+    <a class="btn btn-sm" href="https://kwork.ru/user/datacraft_dev" target="_blank" rel="noopener">Заказать на Kwork</a>
+  </div>
+</header>
+
+<main>
+  <section class="case-hero">
+    <div class="wrap">
+      <a class="back-link" href="../index.html#cases">&larr; Все кейсы</a>
+      <div class="tag-row"><span class="tag">Lua</span><span class="tag">Игровые моды</span><span class="tag">Project Zomboid</span></div>
+      <h1>Модпак и серверные моды для Project Zomboid (4 года)</h1>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="case-block">
+        <h2>Задача</h2>
+        <p>Около 4 лет назад я держу свой приватный сервер Project Zomboid и всё это время сам пишу и поддерживаю для него игровые механики, которых нет в готовых модах: расширенную серверную администрацию, экономику, систему рейтингов и десятки более мелких доработок игрового процесса.</p>
+      </div>
+
+      <div class="case-block">
+        <h2>Решение - htrade, главный мод модпака</h2>
+        <p>Ядро модпака - мой мод <strong>htrade</strong> (внутренний id <code>HydroTrade_h</code>): 228 файлов на Lua, около 45 000 строк кода, 374 коммита за время разработки - это почти половина всей истории репозитория модпака (823 коммита) и основной объём моей собственной работы. Мод развивается с июня 2023 года, последние правки - лето 2026-го.</p>
+        <p>Что конкретно делает htrade (по коду, без преувеличений):</p>
+        <ul>
+          <li><strong>Административная панель</strong> - расширенный набор прав и инструментов для админов: godmode, ghost-режим, noclip, телепорт, мини-скорбоард со списком игроков и быстрыми действиями, чит-инструменты для техники (ремонт, ключи, состояние деталей), просмотр статистики и moddata сервера</li>
+          <li><strong>Система персональных убежищ (safehouse)</strong> - выдача, ограничение площади, проверка пересечений зон, авто-закрытие по правилам, привязка к точкам спавна</li>
+          <li><strong>Toxic Zone</strong> - серверные зоны с газом/туманом: защитные маски и противогазы, постепенный расход фильтра, усиленные зомби-спринтеры внутри зоны</li>
+          <li><strong>Система лута</strong> - фоновое резервное копирование содержимого контейнеров, очистка "мусора" на полу по времени, лут с деревьев и кустов</li>
+          <li><strong>Экономика и учёт техники</strong> - переработка машин (recycling) с конфигурируемыми правилами, расширенный одометр (мили/километры), привязка генераторов к топливным бакам на расстоянии</li>
+          <li>Дополнительно: система ролей фракций, уведомления игрокам (Notify), собственный gate/квестовый слой (SurvivalGuide/QuestSystem), XP-система, десятки серверных sandbox-настроек для тонкой донастройки без правки кода</li>
+        </ul>
+        <p class="fineprint">Цифры (файлы, строки, коммиты) посчитаны напрямую по репозиторию модпака - без округления в свою пользу и без выдуманных показателей вроде числа игроков.</p>
+      </div>
+
+      <div class="case-block">
+        <h2>T15K_Killboard - доска рейтинга убийств</h2>
+        <p>Доска рейтинга убийств для сервера: клиентский UI со списком лидеров, звуковые уведомления о смене месяца и лидера, иконки рангов, серверная логика начисления очков и помесячных наград, настройка через sandbox-опции (в т.ч. исключение админов из топа).</p>
+        <p class="honest-note">Честно об авторстве: исходная версия мода - <strong>T15K</strong> ("The 15 karat"), друг, который написал первую версию и передал её для сервера. Я полностью переработал логику и UI под свои нужды (в репозитории это отдельная история правок поверх исходной версии), но сохранил оригинальное название в благодарность автору идеи.</p>
+      </div>
+
+      <div class="case-block">
+        <h2>AutoLoot и другие мелкие моды</h2>
+        <p>Помимо htrade и Killboard, в модпаке есть мои небольшие моды, например <strong>AutoLoot</strong> - автоматический сбор предметов, которые сервер скупает у игроков: подписка на автосбор, выбор категорий/собственных предметов, клиентский UI и отдельная админ-панель для управления подписками игроков.</p>
+      </div>
+
+      <div class="case-block">
+        <h2>Отдельный опубликованный мод - ZipContainer (ItemStorage)</h2>
+        <p>Отдельно от модпака есть законченный опубликованный мод <a href="https://github.com/besterry/ItemStorage" target="_blank" rel="noopener">ZipContainer</a>: размещаемый тайл-контейнер с вместимостью 1000 предметов, крафтом, переноской и защитой от игровых эксплойтов (запрет "крафта с земли" из контейнера), с русской локализацией.</p>
+      </div>
+
+      <div class="case-block">
+        <h2>Стек</h2>
+        <div class="stack-row">
+          <span class="stack-pill">Lua</span>
+          <span class="stack-pill">Project Zomboid modding API</span>
+          <span class="stack-pill">Клиент/сервер-логика</span>
+          <span class="stack-pill">ISUI</span>
+          <span class="stack-pill">Локализация RU/EN</span>
+          <span class="stack-pill">Sandbox-options</span>
+        </div>
+      </div>
+
+      <div class="case-block">
+        <p class="honest-note">Честно про модпак целиком: репозиторий модпака (<a href="https://github.com/besterry/HC-modpack" target="_blank" rel="noopener">HC-modpack на GitHub</a>) содержит 164 папки модов - и это <strong>не только моя работа</strong>. Большая часть - сторонние моды, скачанные и собранные вместе для удобства раздачи игрокам сервера; их авторство и лицензии я не проверял и не выдаю за своё. На этой странице описаны только моды, которые написал или полностью переработал я сам: htrade, T15K_Killboard, AutoLoot и отдельно опубликованный ZipContainer.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-links">
+      <a href="https://kwork.ru/user/datacraft_dev" target="_blank" rel="noopener">Профиль на Kwork</a>
+      <a href="https://github.com/besterry" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://www.rustore.ru/catalog/developer/okhfzi" target="_blank" rel="noopener">Разработчик в RuStore</a>
+    </div>
+    <p class="fineprint">© 2026 Иван (datacraft_dev)</p>
+  </div>
+</footer>
+
+</body>
+</html>
