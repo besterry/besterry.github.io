@@ -206,10 +206,16 @@ section h2 {
   gap: 14px;
   align-items: flex-start;
 }
-.app-card img { width: 56px; height: 56px; border-radius: 14px; flex-shrink: 0; object-fit: cover; }
+.app-card > img { width: 56px; height: 56px; border-radius: 14px; flex-shrink: 0; object-fit: cover; }
 .app-card h3 { margin: 0 0 4px; font-size: 1rem; }
 .app-card p { margin: 0 0 8px; color: var(--text-muted); font-size: 0.86rem; }
 .app-card .app-links { display: flex; gap: 12px; font-size: 0.85rem; flex-wrap: wrap; }
+.app-shots { display: flex; gap: 8px; margin-top: 10px; flex-wrap: wrap; }
+.app-shots img { width: 90px; height: auto; border-radius: 8px; border: 1px solid var(--border); flex-shrink: 0; }
+
+.case-gallery { display: flex; gap: 12px; flex-wrap: wrap; }
+.case-gallery img { width: 160px; height: auto; border-radius: 10px; border: 1px solid var(--border); }
+.case-thumb { width: 100%; height: auto; max-height: 160px; object-fit: cover; border-radius: 10px; margin-bottom: 12px; }
 
 /* Process */
 .process-list {
