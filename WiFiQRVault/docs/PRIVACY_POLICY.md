@@ -98,4 +98,4 @@ By using the Application, you consent to the processing of your information as s
 
 ## Contact Us
 
-If you have any questions regarding privacy while using the Application, please contact the Service Provider through the developer page on RuStore: https://www.rustore.ru/catalog/developer/okhfzi
+If you have any questions regarding privacy while using the Application, or about these practices, please contact the Service Provider via email at **mobilewave.dev@gmail.com**.

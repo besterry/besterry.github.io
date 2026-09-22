@@ -210,8 +210,7 @@ section h2 {
 .app-card h3 { margin: 0 0 4px; font-size: 1rem; }
 .app-card p { margin: 0 0 8px; color: var(--text-muted); font-size: 0.86rem; }
 .app-card .app-links { display: flex; gap: 12px; font-size: 0.85rem; flex-wrap: wrap; }
-.app-shots { display: flex; gap: 8px; margin-top: 10px; flex-wrap: wrap; }
-.app-shots img { width: 90px; height: auto; border-radius: 8px; border: 1px solid var(--border); flex-shrink: 0; }
+.app-status { color: var(--text-muted); font-size: 0.8rem; font-style: italic; margin: -4px 0 8px; }
 
 .case-gallery { display: flex; gap: 12px; flex-wrap: wrap; }
 .case-gallery img { width: 160px; height: auto; border-radius: 10px; border: 1px solid var(--border); }
