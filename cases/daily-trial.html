@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Кейс: Испытание дня - Android-игра с онлайн-лидербордом</title>
+<meta name="description" content="Android-игра на Kotlin/Compose в духе Wordle с бэкендом на Vercel и Redis: онлайн-лидерборд, анти-чит, монетизация.">
+<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="../index.html"><span class="dot"></span> datacraft_dev</a>
+    <nav class="nav-links">
+      <a href="../index.html#cases">Все кейсы</a>
+      <a href="../index.html#services">Услуги</a>
+    </nav>
+    <a class="btn btn-sm" href="https://kwork.ru/user/datacraft_dev" target="_blank" rel="noopener">Заказать на Kwork</a>
+  </div>
+</header>
+
+<main>
+  <section class="case-hero">
+    <div class="wrap">
+      <a class="back-link" href="../index.html#cases">&larr; Все кейсы</a>
+      <div class="tag-row"><span class="tag">Android</span><span class="tag">Kotlin/Compose</span><span class="tag">Backend</span><span class="tag">API</span></div>
+      <h1>Испытание дня - ежедневная словесная игра с онлайн-рейтингом</h1>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="case-block">
+        <h2>Задача</h2>
+        <p>Сделать мобильную игру в духе Wordle - с ежедневной задачей, сериями побед (streak) и возможностью поделиться результатом - и добавить соревновательный элемент: онлайн-таблицу лидеров за день и за неделю, без необходимости регистрации.</p>
+      </div>
+
+      <div class="case-block">
+        <h2>Решение</h2>
+        <p>Android-приложение на Kotlin/Jetpack Compose с локальным прогрессом и календарём результатов, плюс отдельный лёгкий серверный бэкенд (Vercel Edge Functions + Redis), который принимает результаты игроков, защищает от подделки и отдаёт рейтинг в реальном времени. Добавлен второй игровой режим с рекламной монетизацией и вход через Google-аккаунт для переноса прогресса между устройствами.</p>
+        <ul>
+          <li>Ежедневная головоломка с детерминированной генерацией выпусков после исчерпания заготовленного пула</li>
+          <li>Локальный прогресс: календарь результатов за 28 дней, статистика серий побед</li>
+          <li>Онлайн-лидерборд: дневной и недельный, с редактируемым никнеймом</li>
+          <li>Анти-чит без общего секрета на клиенте - у каждой установки свой производный HMAC-ключ для подписи результата</li>
+          <li>Второй, «бесконечный» режим с ad-монетизацией и ограничением частоты показа рекламы</li>
+          <li>Переключение темы и языка (RU/EN) на лету</li>
+        </ul>
+      </div>
+
+      <div class="case-block">
+        <h2>Результат</h2>
+        <p>Рабочее приложение, прошедшее предпродакшн-аудит перед публикацией в RuStore. Игра опубликована - доступна для установки в RuStore под названием «Испытание дня».</p>
+        <p><a href="https://www.rustore.ru/catalog/app/com.dailytrial.app" target="_blank" rel="noopener">Открыть в RuStore</a></p>
+      </div>
+
+      <div class="case-block">
+        <h2>Стек</h2>
+        <div class="stack-row">
+          <span class="stack-pill">Kotlin</span>
+          <span class="stack-pill">Jetpack Compose</span>
+          <span class="stack-pill">TypeScript</span>
+          <span class="stack-pill">Vercel Edge Functions</span>
+          <span class="stack-pill">Upstash Redis</span>
+          <span class="stack-pill">Firebase / Google Sign-In</span>
+          <span class="stack-pill">JUnit</span>
+        </div>
+      </div>
+
+      <div class="case-block">
+        <p class="honest-note">Честно: анти-чит-механизм осознанно не защищает от рутованных устройств - это компромисс ради простоты, а не недосмотр. Бэкенд намеренно минималистичен, без лишней инфраструктуры - для задачи такого масштаба это плюс, а не сложная распределённая система.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-links">
+      <a href="https://kwork.ru/user/datacraft_dev" target="_blank" rel="noopener">Профиль на Kwork</a>
+      <a href="https://github.com/besterry" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://www.rustore.ru/catalog/developer/okhfzi" target="_blank" rel="noopener">Разработчик в RuStore</a>
+    </div>
+    <p class="fineprint">© 2026 Иван (datacraft_dev)</p>
+  </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Кейс: автоматическая сортировка музыкальной библиотеки</title>
+<meta name="description" content="Python CLI-скрипт для сортировки аудиофайлов по исполнителям и альбомам с использованием тегов и MusicBrainz.">
+<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="../index.html"><span class="dot"></span> datacraft_dev</a>
+    <nav class="nav-links">
+      <a href="../index.html#cases">Все кейсы</a>
+      <a href="../index.html#services">Услуги</a>
+    </nav>
+    <a class="btn btn-sm" href="https://kwork.ru/user/datacraft_dev" target="_blank" rel="noopener">Заказать на Kwork</a>
+  </div>
+</header>
+
+<main>
+  <section class="case-hero">
+    <div class="wrap">
+      <a class="back-link" href="../index.html#cases">&larr; Все кейсы</a>
+      <div class="tag-row"><span class="tag">Python</span><span class="tag">CLI</span><span class="tag">API</span></div>
+      <h1>Автоматическая сортировка музыкальной библиотеки</h1>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="case-block">
+        <h2>Задача</h2>
+        <p>Привести в порядок большую свалку аудиофайлов - разложить их по папкам исполнителей (и опционально альбомов), даже если имена файлов и теги написаны по-разному (например, «Static-X» и «Static X» - один и тот же исполнитель).</p>
+      </div>
+
+      <div class="case-block">
+        <h2>Решение</h2>
+        <p>Консольный скрипт на Python, который определяет исполнителя и альбом по имени файла, тегам (ID3/MP4) или структуре папок, умеет объединять разные варианты написания одного имени в одну папку и, при желании, уточнять «канонические» имена исполнителей через базу MusicBrainz.</p>
+        <ul>
+          <li>Определение исполнителя: из имени файла, тегов, структуры папок - в порядке приоритета</li>
+          <li>Словарь алиасов - объединение разных вариантов написания имени в одну папку</li>
+          <li>Уточнение канонических имён через MusicBrainz с локальным кэшем и паузой между запросами</li>
+          <li>Режим <code>--dry-run</code> - план действий без реального переноса файлов</li>
+          <li>Копирование вместо перемещения - на случай, если оригиналы нужно сохранить</li>
+          <li>Поддержка форматов: mp3, flac, m4a, ogg, wma, aac</li>
+        </ul>
+      </div>
+
+      <div class="case-block">
+        <h2>Результат</h2>
+        <p>Готовый инструмент с режимом предпросмотра, поддержкой основных аудиоформатов и понятной документацией - можно запускать «как есть» на реальной библиотеке. Опубликован с открытой лицензией MIT.</p>
+        <p><a href="https://github.com/besterry/sort_music" target="_blank" rel="noopener">Код на GitHub</a></p>
+      </div>
+
+      <div class="case-block">
+        <h2>Стек</h2>
+        <div class="stack-row">
+          <span class="stack-pill">Python 3.10+</span>
+          <span class="stack-pill">mutagen</span>
+          <span class="stack-pill">MusicBrainz API</span>
+        </div>
+      </div>
+
+      <div class="case-block">
+        <p class="honest-note">Честно: это личный утилитарный скрипт, а не production-сервис - не рассчитан на web UI или многопользовательский режим. Определение исполнителя/альбома основано на эвристиках и тегах; для сильно «грязных» библиотек может потребоваться донастройка словаря алиасов.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-links">
+      <a href="https://kwork.ru/user/datacraft_dev" target="_blank" rel="noopener">Профиль на Kwork</a>
+      <a href="https://github.com/besterry" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://www.rustore.ru/catalog/developer/okhfzi" target="_blank" rel="noopener">Разработчик в RuStore</a>
+    </div>
+    <p class="fineprint">© 2026 Иван (datacraft_dev)</p>
+  </div>
+</footer>
+
+</body>
+</html>
